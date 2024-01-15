@@ -5,13 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Royal Trip</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/c44d6b9cbb.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="header container">
+        <nav class="nav-bar">
+            <div class="nav-logo">
+                <div class="logo-img">
+                    <img src="./Images/Group 40071 (2).png" alt="">
+                </div>
+                <h3>Royal <span>Travel</span></h3>
+            </div>
+            <div class="nav-pages">
+                <div class="nav-menu">
+                    <a href="">Home</a><a href="">Packages</a><a href="">Testimonial</a><a href="">Blog</a><a href="">Contact</a>
+                </div>
+                <i class="fa-solid fa-bars"></i>
+            </div>
 
+
+            
         </nav>
-        
+        <div class="banner">
+            <div class="banner-content">
+                <div class="banner-text">
+                    <h3 class="banner-title">Explore Your Travel</h3>
+                    <p class="text-primary banner-description">Unleash wanderlust with curated destinations, creating unforgettable journeys and cherished memories.</p>
+                </div>
+                <div class="banner-form">
+                    <form>
+                        <input class="where" type="text" placeholder="Where go">
+                        <select id="when" name="when">
+                            <option value="when">When</option>
+                        </select>
+                        <select id="selectType" name="selectType">
+                            <option value="selectType">Select Type</option>
+                        </select>
+                        <button class="btn-primary">
+                            <p><i class="fa-solid fa-magnifying-glass"></i>Find Now</p>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
     </header>
     <main>
 

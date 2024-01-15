@@ -1,4 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
+}
+
+
+/* shared styles  */
+body{
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+}
+
+.text-primary{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+}
+
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 9.375%;
+}
+
+.btn-primary{
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.25;
+    font-weight: 800;
+    padding: 13px 35px;
+    border: 0;
+    cursor: pointer;
+    width: 175px;
+}
+
+
+/* header  */
+
+
+.nav-bar{
+    margin: 52px 0 49px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-img img{
+    width: 100%;
+}
+.logo-img{
+    width: fit-content;
+}
+
+.nav-logo h3{
+    color: #131318;
+    font-size: 2.25rem;
+    font-weight: 800;
+    padding-left: 16px;
+}
+
+.nav-logo h3>span{
+    color: #FF5400;
+}
+
+.nav-pages{
+    display: flex;
+    width: 61%;
+    justify-content: flex-end;
+
+}
+
+.nav-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 30px;
+    align-items: center;
+}
+
+.fa-solid{
+    display: none;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: #424247;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.nav-menu :first-child{
+    color: #FF5400;
+}
+
+.banner{
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+    background-size: cover;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner-content{
+    padding: 106px 0;
+}
+
+.banner-text{
+    text-align: center;
+    max-width: 676px;
+    margin: 0 auto;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.banner-description{
+    color: #fff;
+    margin: 24px 0 48px 0;
+}
+
+.banner-form{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 16px;
+    margin: 0 15.81196581196581%;
+
+}
+
+.banner-form form{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 52px;
+}
+
+.banner-form form input,.banner-form form select{
+    width: 25%;
+    height: 100%;
+    border-radius: 8px;
+    background: #FFF;
+    padding-left: 16px;
+    font-family: "Mulish", sans-serif;
+    border: 0;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+
+.banner-form form select, .banner-form form input::-webkit-input-placeholder{
+    color: rgba(19, 19, 24, 0.50);
+}
+
+
+.banner .banner-form .btn-primary{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #FFF;
+    font-family: "Mulish", sans-serif;
+    width: 25%;
+}
+
+.fa-solid{
+    margin-right: 8px;
+}
+
+
+/* main  */
+
+/* footer  */
+
+@media screen and (max-width:600px) {
+    .container{
+        padding: 0 20px;
+    }
+
+    .nav-bar{
+        margin: 19.2px 0 17.8px 0;
+    }
+
+    .nav-pages{
+        width: 10%;
+    }
+
+    .fa-solid{
+        display: contents;
+        font-size: 1.5rem;
+    }
+
+    .nav-menu{
+        display: none;
+    }
+    .text-primary{
+        font-size: 0.875rem;
+        line-height: 1.313rem;
+    }
+    .banner-content{
+        padding: 32px 0;
+    }
+    .banner-title{
+        font-size: 1.375rem;
+    }
+
+    .banner-form{
+        margin: 0 6%;
+    }
+
+    .banner-form form{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .banner .banner-form .btn-primary, .banner-form form input,.banner-form form select{
+        width: 100%;
+        height: 52px;
+    }
+    .banner-form form input{
+        width: 95%;
+    }
+    
 }
