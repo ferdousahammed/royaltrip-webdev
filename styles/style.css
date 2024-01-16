@@ -512,7 +512,7 @@ hr{
 }
 
 .box-2 img{
-    width: 100%;
+    width: 70%;
     border-radius: 20px 20px 0 0;
     vertical-align: bottom;
     border: 1vw solid black;
@@ -523,10 +523,11 @@ hr{
     display: flex;
     flex-direction: column;
     gap:30px;
+    justify-content: center;
 }
 
 .box-1 img{
-    width: 50%;
+    width: 30%;
 }
 
 /* footer  */
