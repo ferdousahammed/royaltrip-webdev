@@ -4,6 +4,9 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 
@@ -11,8 +14,8 @@
 body{
     font-family: "Mulish", sans-serif;
     font-weight: 400;
+    font-size: 1rem;
 }
-
 .text-primary{
     color: rgba(19, 19, 24, 0.70);
     font-size: 1rem;
@@ -31,7 +34,7 @@ body{
     background: #FF5400;
     color: #FFF;
     text-align: center;
-    font-size: 1.25;
+    font-size: 1.25rem;
     font-weight: 800;
     padding: 13px 35px;
     border: 0;
@@ -39,7 +42,7 @@ body{
     width: 175px;
 }
 
-.popular-tour, .destination,.service{
+.popular-tour, .destination,.service, .perfect-place,.newsletter{
     margin: 100px auto;
 }
 
@@ -54,9 +57,10 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.nav-logo{
+.nav-logo,.footer-logo{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .logo-img img{
@@ -66,15 +70,17 @@ body{
     width: fit-content;
 }
 
-.nav-logo h3{
+.nav-logo>h3,.footer-logo>h3{
     color: #131318;
     font-size: 2.25rem;
     font-weight: 800;
     padding-left: 16px;
 }
 
-.nav-logo h3>span{
+.nav-logo h3>span, .footer-logo h3>span{
     color: #FF5400;
+    font-size: 2.25rem;
+    font-weight: 800;
 }
 
 .nav-pages{
@@ -161,12 +167,8 @@ body{
     border-radius: 8px;
     background: #FFF;
     padding-left: 16px;
-    font-family: "Mulish", sans-serif;
     border: 0;
     outline: none;
-    font-size: 1rem;
-    font-weight: 400;
-
 }
 
 
@@ -176,10 +178,8 @@ body{
 
 
 .banner .banner-form .btn-primary{
-    font-size: 1rem;
     font-weight: 700;
     color: #FFF;
-    font-family: "Mulish", sans-serif;
     width: 25%;
 }
 
@@ -194,14 +194,14 @@ body{
 
 
 /* popular tour section */
-.popular-tour-content{
+.popular-tour-content, .perfect-place-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
 }
 
-.popular-tour-img img{
+.popular-tour-img img, .perfect-place-img img{
     width: 100%;
 }
 
@@ -209,7 +209,7 @@ body{
     max-width: 577px;
 }
 
-.popular-tour-head,.destination-heading, .service-head{
+.popular-tour-head, .perfect-place-head,.destination-heading, .service-head{
     color: #131318;
     font-size: 2.5rem;
     font-weight: 800;
@@ -221,11 +221,11 @@ body{
     margin: 24px 0;
 }
 
-.tour-promise li{
+.tour-promise li, .perfect-place-list li{
     margin-top: 16px;
 }
 
-.popular-tour-text button{
+.popular-tour-text button, .perfect-place-text button{
     margin-top: 32px;
 }
 
@@ -234,7 +234,6 @@ body{
 
 .destination-text,.service-text{
     text-align: center;
-    margin-bottom: 48px;
     max-width: 643px;
     margin: 0 auto 48px;
 }
@@ -306,16 +305,18 @@ body{
     border-radius: 16px;
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
-    border: 0;
     max-width: 573px;
     padding: 32px;
 }
 
 .type-box:nth-child(2n+1){
-    background: rgba(251, 181, 99, 0.05);;
+    background: rgba(251, 181, 99, 0.05);
+    border: 1px solid rgba(251, 181, 99, 0.20);
+
+
 }
 
-.type-head{
+.type-head, .newsletter-head{
     color: #131318;
     font-size: 1.5rem;
     font-weight: 800;
@@ -325,15 +326,142 @@ body{
 .type-logo{
     margin-bottom: 32px;
 }
+
+
+/* A Simple Perfect Place To Get Lost  */
+
+.perfect-place-text{
+    max-width: 532px;
+}
+
+.perfect-place-head{
+    max-width: 448px;
+}
+.perfect-place-list{
+    margin-top: 24px;
+    padding-left: 25px;
+}
+
+.perfect-place-list li{
+    font-weight: 700;
+    color: #131318;
+}
+
+/* Newsletter  */
+
+.newsletter-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+}
+
+.newsletter-input{
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px;
+}
+
+.newsletter-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 24px 0 0;
+}
+.newsletter-form input{
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    height: 52px;
+    border: 0;
+    outline: 0;
+    padding: 0 20px;
+}
+
+.newsletter-form input[type="email"]{
+    margin: 16px 0 24px 0;
+}
+
+hr{
+    margin:24px 0;
+    background: rgba(19, 19, 24, 0.10);
+    border: 0;
+    height: 2px;
+}
+
+.newsletter-form button{
+    width: 100%;
+    
+}
+
+.newsletter-img img{
+    width: 100%;
+}
+
+.newsletter-img{
+    position: relative;
+}
+
+.discount{
+    border-radius: 16px;
+    background: #FF5400;
+    position: absolute;
+    z-index: 3;
+    bottom: 48px;
+    right:12px;
+    transform: rotate(-19.628deg);
+    padding: 30px;
+    color: #FFF;
+    text-align: center;
+}
+
+.discount p{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.discount h4{
+    font-size: 2rem;
+    font-weight: 800;
+}
 /* footer  */
+
+footer{
+    background: rgba(19, 19, 24, 0.05);
+    text-align: center;
+    padding: 110px;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.fa-brands{
+    font-size: 2rem;
+    color: #131318;
+}
+
+.footer-text .text-primary{
+    max-width: 769px;
+    margin: 15px auto 33px auto;
+}
+
+.copyright{
+    font-weight: 300;
+}
+
+footer .container hr{
+    max-width: 1162.656px;
+    margin: 50px auto;
+}
 
 @media screen and (max-width:600px) {
     .container{
         padding: 0 20px;
     }
 
-    .banner-form form,.popular-tour-content{
+    .banner-form form,.popular-tour-content,.perfect-place-content, .newsletter-content{
         flex-direction: column;
+        gap: 20px;
     }
 
     .nav-bar{
@@ -379,15 +507,15 @@ body{
         width: 95%;
     }
 
-    .popular-tour,.destination,.service-type{
+    .popular-tour,.destination,.service-type,.perfect-place,.newsletter{
         margin: 24px auto;
     }
 
-    .popular-tour-head,.destination-heading,.place-name,.type-head{
+    .popular-tour-head,.destination-heading,.place-name,.type-head,.perfect-place-head,.service-head{
         font-size: 1.25rem;
     }
 
-    .destination-text,.popular-tour-head,.destination-heading,.type-logo{
+    .destination-text,.popular-tour-head,.destination-heading,.type-logo,.service-head,.service-text{
         margin-bottom: 16px;
     }
 
@@ -406,4 +534,16 @@ body{
         width: 100%;
     }
 
+    .newsletter-input{
+        padding: 24px ;
+        width: 89%;
+    }
+
+    footer{
+        padding: 30px;
+    }
+
+    .footer-text .text-primary{
+        margin: 16.3px auto
+    }
 }
