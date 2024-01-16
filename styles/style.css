@@ -6,7 +6,6 @@
     padding: 0;
     font-family: "Mulish", sans-serif;
     font-weight: 400;
-    font-size: 1rem;
 }
 
 
@@ -348,13 +347,13 @@ body{
     max-height: 500px;
     background-image: url("../Images/Group\ 39.png");
     background-size: cover;
-    padding: 11.2% 4.786324786324787% 11.2% 45.72%;
+    padding: 11.2% 4.786324786324787% 11.2% 35.72%;
     margin-bottom: 24px;
 }
 
 .deals-discount-img-box:nth-child(2n){
     background-image: url("../Images/Group\ 40.png");
-    padding: 11.2% 45.72% 11.2% 4.786324786324787%;
+    padding: 11.2% 35.72% 11.2% 4.786324786324787%;
 }
 
 .background-img img{
@@ -365,7 +364,6 @@ body{
     border: 2px solid #FFF;
     background: rgba(255, 255, 255, 0.80);
     backdrop-filter: blur(2.5px);
-    max-width: 579px;
     padding: 50px;
 }
 .deals-price{
@@ -619,8 +617,12 @@ footer .container hr{
         margin: 24px auto;
     }
 
-    .popular-tour-head,.destination-heading,.place-name,.type-head,.perfect-place-head,.service-head,.deals-title{
+    .popular-tour-head,.destination-heading,.place-name,.type-head,.perfect-place-head,.service-head,.deals-title, .deals-head{
         font-size: 1.25rem;
+    }
+
+    .deals-price,.btn-primary{
+        font-size: 1rem;
     }
 
     .place-name{
@@ -672,15 +674,20 @@ footer .container hr{
     }
 
     .discount{
-        padding: 20px;
+        padding: 15px;
         bottom: 40px;
     }
 
     .discount p{
-        font-size: 0.938rem;
+        font-size: 0.738rem;
+        margin-bottom: 0;
     }
     .discount h4{
-        font-size: 1.313rem;
+        font-size: 1rem;
+    }
+
+    .location-time{
+        gap:10px;
     }
 
     .bg-image{
@@ -811,6 +818,15 @@ footer .container hr{
         padding: 24px;
     }
 
+    .deals-discount-img-box{
+        padding: 11.2% 4.786324786324787% 11.2% 25.72%;
+        margin-bottom: 24px;
+    }
+    
+    .deals-discount-img-box:nth-child(2n){
+        padding: 11.2% 25.72% 11.2% 4.786324786324787%;
+    }
+
     .newsletter-input{
         padding: 24px ;
         width: 94%;
@@ -826,6 +842,10 @@ footer .container hr{
     }
     .discount h4{
         font-size: 1.75rem;
+    }
+
+    .location-time{
+        gap:10px;
     }
 
     .bg-image{
