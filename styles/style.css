@@ -24,7 +24,7 @@ body{
 }
 
 .container{
-    max-width: 1920px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 9.375%;
 }
@@ -39,10 +39,13 @@ body{
     padding: 13px 35px;
     border: 0;
     cursor: pointer;
-    width: 175px;
 }
 
-.popular-tour, .destination,.service, .perfect-place,.newsletter{
+.btn-primary:hover{
+    background-color: #ee814a;
+}
+
+.popular-tour, .destination,.service, .perfect-place,.newsletter, .deals-discount, .download{
     margin: 100px auto;
 }
 
@@ -106,12 +109,16 @@ body{
     text-decoration: none;
     color: #424247;
     font-size: 1.125rem;
-    font-weight: 400;
+    font-weight: 700;
 }
 
-.nav-menu :first-child{
+/* .nav-menu :first-child{
     color: #FF5400;
-    font-weight: 700;;
+} */
+
+.nav-menu a:hover{
+    color: #FF5400;
+    font-weight: 700;
 }
 
 .banner{
@@ -199,6 +206,7 @@ body{
     justify-content: space-between;
     align-items: center;
     gap: 50px;
+
 }
 
 .popular-tour-img img, .perfect-place-img img{
@@ -209,7 +217,7 @@ body{
     max-width: 577px;
 }
 
-.popular-tour-head, .perfect-place-head,.destination-heading, .service-head{
+.popular-tour-head, .perfect-place-head,.destination-heading, .service-head,.deals-title{
     color: #131318;
     font-size: 2.5rem;
     font-weight: 800;
@@ -232,7 +240,7 @@ body{
 
 /* Choose Your Destination  */
 
-.destination-text,.service-text{
+.destination-text,.service-text, .deals-title-description{
     text-align: center;
     max-width: 643px;
     margin: 0 auto 48px;
@@ -316,7 +324,7 @@ body{
 
 }
 
-.type-head, .newsletter-head{
+.type-head, .newsletter-head, .deals-head{
     color: #131318;
     font-size: 1.5rem;
     font-weight: 800;
@@ -325,6 +333,59 @@ body{
 
 .type-logo{
     margin-bottom: 32px;
+}
+
+/* deals and discount  */
+
+.btn-all-pkg{
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+}
+.deals-discount-img-box{
+    border-radius: 16px;
+    max-width: 1170px;
+    max-height: 500px;
+    background-image: url("../Images/Group\ 39.png");
+    background-size: cover;
+    padding: 11.2% 4.786324786324787% 11.2% 45.72%;
+    margin-bottom: 24px;
+}
+
+.deals-discount-img-box:nth-child(2n){
+    background-image: url("../Images/Group\ 40.png");
+    padding: 11.2% 45.72% 11.2% 4.786324786324787%;
+}
+
+.background-img img{
+    width: 100%;
+}
+.deals-text-box{
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    max-width: 579px;
+    padding: 50px;
+}
+.deals-price{
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: #FF5400;
+    margin: 16px 0 24px 0;
+    max-width: 452px;
+
+    
+}
+
+.location-time{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 26px;
+}
+
+.location-time .fa-solid{
+    color: #FF5400;
 }
 
 
@@ -422,6 +483,52 @@ hr{
     font-size: 2rem;
     font-weight: 800;
 }
+
+/* download  */
+
+.bg-image{
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../Images/download\ app.jpg");
+    background-size: cover;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    gap :20px;
+    justify-content: space-around;
+    padding: 100px 100px 0 100px;
+}
+
+.download-text .type-head, .download-text .text-primary{
+    color: white;
+}
+
+.download-logo img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.box-2{
+    max-width: 600px;
+}
+
+.box-2 img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    vertical-align: bottom;
+    border: 1vw solid black;
+    border-bottom: 0;
+}
+
+.box-1{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.box-1 img{
+    width: 50%;
+}
+
 /* footer  */
 
 footer{
@@ -507,15 +614,19 @@ footer .container hr{
         width: 95%;
     }
 
-    .popular-tour,.destination,.service-type,.perfect-place,.newsletter{
+    .popular-tour,.destination,.services,.service-type,.perfect-place,.newsletter, .deals-discount,.download{
         margin: 24px auto;
     }
 
-    .popular-tour-head,.destination-heading,.place-name,.type-head,.perfect-place-head,.service-head{
+    .popular-tour-head,.destination-heading,.place-name,.type-head,.perfect-place-head,.service-head,.deals-title{
         font-size: 1.25rem;
     }
 
-    .destination-text,.popular-tour-head,.destination-heading,.type-logo,.service-head,.service-text{
+    .place-name{
+        font-weight: 700;
+    }
+
+    .destination-text,.popular-tour-head,.destination-heading,.type-logo,.service-head,.service-text,.deals-title-description, .deals-title, .location-time{
         margin-bottom: 16px;
     }
 
@@ -534,9 +645,53 @@ footer .container hr{
         width: 100%;
     }
 
+    .deals-discount-img-box{
+        padding: 37.4% 16px 16px 16px ;
+    }
+
+    .deals-discount-img-box:nth-child(2n){
+        padding: 37.4% 16px 16px 16px ;
+    }
+
+    .deals-head{
+        margin-bottom: 8px;
+    }
+
+    .deals-price{
+        margin: 12px 0 16px 0;
+    }
+
+    .deals-text-box{
+        padding: 24px;
+    }
+
     .newsletter-input{
         padding: 24px ;
         width: 89%;
+    }
+
+    .discount{
+        padding: 20px;
+        bottom: 40px;
+    }
+
+    .discount p{
+        font-size: 0.938rem;
+    }
+    .discount h4{
+        font-size: 1.313rem;
+    }
+
+    .bg-image{
+        padding: 30px;
+    }
+
+    .box-1 img{
+        width: 40%;
+    }
+
+    .box-2{
+        display: none;
     }
 
     footer{
@@ -546,4 +701,142 @@ footer .container hr{
     .footer-text .text-primary{
         margin: 16.3px auto
     }
+}
+
+
+@media screen and (min-width: 601px) and (max-width:992px) {
+
+    .container{
+        padding: 0 40px;
+    }
+
+    .popular-tour-content,.perfect-place-content, .newsletter-content, .perfect-place-img{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .popular-tour-text, .newsletter-img, .perfect-place-text{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .popular-tour-img,.perfect-place-img{
+        width: 80%;
+    }
+
+    .nav-bar{
+        margin: 50px 0 30px 0;
+    }
+
+    .nav-pages{
+        width: 10%;
+    }
+
+    .nav-pages .fa-solid{
+        display: inline;
+        font-size: 1.5rem;
+    }
+
+    .nav-menu{
+        display: none;
+    }
+    .banner-content{
+        padding: 32px 0;
+    }
+    .banner-title{
+        font-size: 3rem;
+    }
+
+    .banner-form{
+        margin: 0 6%;
+    }
+
+    .banner-form form{
+        height: auto;
+    }
+
+    .banner .banner-form .btn-primary, .banner-form form input,.banner-form form select{
+        width: 100%;
+        height: 52px;
+    }
+    .banner-form form input{
+        width: 95%;
+    }
+
+    .popular-tour,.destination,.services,.service-type,.perfect-place,.newsletter, .deals-discount,.download{
+        margin: 48px auto;
+    }
+
+    .place-name,.type-head,.perfect-place-head,.service-head,.deals-title{
+        font-size: 1.25rem;
+    }
+
+    .popular-tour-head,.destination-heading, .service-head,.deals-title,.perfect-place-head{
+        font-size: 1.7rem;
+    }
+
+    .place-name{
+        font-weight: 700;
+    }
+
+    .destination-text,.popular-tour-head,.destination-heading,.type-logo,.service-head,.service-text,.deals-title-description, .deals-title, .location-time{
+        margin-bottom: 16px;
+    }
+
+    .tour-promise{
+        padding-left: 20px;
+    }
+
+    /* .grid-container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    } */
+
+    .grid-box{
+        width: 100%;
+    }
+
+    .deals-head{
+        margin-bottom: 8px;
+    }
+
+    .deals-price{
+        margin: 12px 0 16px 0;
+    }
+
+    .deals-text-box{
+        padding: 24px;
+    }
+
+    .newsletter-input{
+        padding: 24px ;
+        width: 94%;
+    }
+
+    .discount{
+        padding: 20px;
+        bottom: 48px;
+    }
+
+    .discount p{
+        font-size: 1.25rem;
+    }
+    .discount h4{
+        font-size: 1.75rem;
+    }
+
+    .bg-image{
+        padding: 50px 50px 0 50px;
+    }
+
+    footer{
+        padding: 30px;
+    }
+
+    .footer-text .text-primary{
+        margin: 16.3px auto
+    }
+
 }
